@@ -9,10 +9,9 @@ Null Hypothesis (H₀): There is no significant relationship between sleep patte
 
 Alternative Hypothesis (H₁): There is a significant relationship between sleep patterns and well-being indicators among university students.
 
-| Well-being Variables     | Sleep Variables               |
+| Well-being Variables     | Sleep Variables                    |
 |--------------------------|------------------------------------|
-| Stress Level             | Sleep Duration                     |
-| Sleep Difficulty         | Sleep Quality                      |
+| Stress Level             | Sleep Duration                     |         
 | Screen Time              | Sleep Quality                      |
 | Caffeine Intake          | Sleep Quality                      |
 | Physical Activity Level  | Sleep Quality                      |
