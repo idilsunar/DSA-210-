@@ -11,7 +11,7 @@ Alternative Hypothesis (H₁): There is a significant relationship between sleep
 
 | Well-being Variables     | Sleep Variables               |
 |--------------------------|------------------------------------|
-| Stress Level             | Sleep Quality                      |
+| Stress Level             | Sleep Duration                     |
 | Sleep Difficulty         | Sleep Quality                      |
 | Screen Time              | Sleep Quality                      |
 | Caffeine Intake          | Sleep Quality                      |
