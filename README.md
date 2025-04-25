@@ -1,83 +1,101 @@
-# DSA-210-
-**The Impact of Screen Time on Children's Brain Development**
+# Effects of Sleep Patterns on the Life Quality Of College Students
 
-### **1\. Project Overview**
+## 1. Project Overview
+This project investigates the relationship between sleep patterns and the life quality of university students. It aims to assess how sleep duration, regularity, and quality correlate with well-being indicators such as caffeine intake, screen time, physical activity, stress levels and other indicators.The data will be gathered from a self-reported survey and enriched using public datasets, then the data will be analyzed using exploratory and statistical methods.
 
-I am a student from Sabancı University, and this is the proposal for my term project for DSA210. The aim of this project is to gain a better understanding of how screen time affects the development of children. I will be analyzing data from datasets such as ABCD and NHANES. Furthermore, I will be enriching the data obtained by incorporating additional data sources related to child healthcare, educational performance, and behavioral assessments to enhance the analysis and provide deeper insights.
+I will test the validity of the following hypothesis:
 
-My main goal is to shed light on how screen time influences children's development, with a particular focus on brain development. I will be talking about brain development in terms of cognitive processes and educational performance. Additionally, I will develop a Screen Time Impact Score (STIS) by integrating various cognitive, academic, and social development metrics to provide a more comprehensive research on how screen time affects children.
+Null Hypothesis (H₀): There is no significant relationship between sleep patterns and well-being indicators among university students.
 
-### **2\. Motivation**
+Alternative Hypothesis (H₁): There is a significant relationship between sleep patterns and well-being indicators among university students.
 
-My motivation for conducting this research is to provide a better understanding of
-how screen time affects children's brain development. Lately digital devices have 
-become an integral part of children’s daily lives, therefore I believe that it is very 
-important to research their impact on their health and establish guidelines for healthy 
-usage. The development of Screen Time Impact Score (STIS) is aimed to make the 
-understanding of screen time’s effects on children for policymakers and parents easier.
-This way, they can set more appropriate screen time limits while ensuring a balance with
-other activities that help children develop. This research can also provide insight to 
-many people such as myself who want to learn more about digital exposure’s effects on 
-cognitive processes and educational performance in children. By doing this project, 
-I aim to better understand the concepts of data science that we have learned in class 
-by applying them to real life scenarios as well as gain more knowledge on the 
-correlation between screen time and children’s brain development
+| Well-being Variables     | Sleep Variables               |
+|--------------------------|------------------------------------|
+| Stress Level             | Sleep Quality                      |
+| Sleep Difficulty         | Sleep Quality                      |
+| Screen Time              | Sleep Quality                      |
+| Caffeine Intake          | Sleep Quality                      |
+| Physical Activity Level  | Sleep Quality                      |
 
-###
 
-### **3\. Data Sources**
+## 2. Motivation
+I noticed that university students often suffer from irregular sleep schedules and high stress, especially during midterm weeks and finals. Understanding how sleep affects mental well-being can help students adopt healthier habits and improve academic performance and quality of life. Furthermore, I plan to better understand the data science concepts that we have learned during lectures by applying these concepts into daily life situations that concern many students such as myself.
 
-For this project, I will use publicly available datasets and enrich them with supplementary data sources. My primary datasets are as listed below:
+## 3. Data Sources
 
-**The Adolescent Brain Cognitive Development (ABCD) Study** – A large-scale longitudinal dataset providing information on brain imaging, cognitive functions, and lifestyle habits of children.
+I will retrive data from the following:
 
-**National Health and Nutrition Examination Survey (NHANES)** – Includes self-reported screen time usage and cognitive assessments.
+### 3.1. Custom Survey
+A Google Form was created and shared among university students to gather first-hand data. The survey includes questions about:
 
-### **4\. Data Enrichment**
+* *   Sleep duration
+* *   Bedtime and wake-up times
+* *   Self-reported stress, anxiety, focus, and efficiency levels -Link:
+  *   https://docs.google.com/forms/d/e/1FAIpQLSfzbsUjo9XQQTqDkXibk7uiqshNAtH5bJ6ntHw5EUVsY9YSXg/viewform?usp=header)
+    
+### 3.2. Public Datasets:
+* *   [Kaggle - Student Sleep Patterns](https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns?resource=download)
+* *   [Kaggle- SleepQual and B.Health dataset](https://www.kaggle.com/datasets/anshika1011/sleepqual-and-bhealth-dataset)
 
-To enhance the datasets that I will be using, I will integrate data from healthcare, academic, and behavioral studies. The enriched dataset will allow for a more comprehensive analysis of how screen time influences different aspects of child brain development.
+## 4. Data Analysis Plan
+* *   **Exploratory Analysis**: Analyze sleep duration, consistency, bedtime vs wake-up patterns.
+* *   **Hypothesis Testing**: Use hypothesis testing to assess links between sleep and mental well-being scores.
+* *   **Visualization**: Use bar plots, heatmaps, and scatter plots to illustrate findings.
+* *   **Modeling**: Apply logistic regression to predict stress/anxiety levels from sleep features.
 
-#### **Cognitive Processes Metrics**
+## 4.1 Data Enrichment Strategy
+To strengthen the analysis, the self-reported survey data collected from university peers is enriched with multiple publicly available datasets. These external sources provide additional variables such as wearable-tracked sleep quality, biometric data, and mental health indicators collected in different contexts. By combining local and public datasets:
 
-1. **Memory (Short-term & Working Memory):** Measured using ABCD cognitive tasks.
-2. **Attention Span:** Behavioral tests and survey data from ABCD/NHANES.
-3. **Executive Function (Decision-making, Self-control):** Brain imaging and response inhibition tasks.
-4. **Processing Speed:** Tasks requiring rapid decision-making.
+* *   I will enhance the variety and richness of features available
+* *   I will increase the overall sample size for more robust analysis
+* *   And we will have a comparison between self-reported and sensor-based sleep metrics
 
-#### **Academic Performance Metrics**
+## 5. Tools and Technologies
+* *   **Language**: Python
+* *   **Libraries**: Pandas, NumPy, Seaborn, Matplotlib, SciPy
+* *   **Platform**: GitHub 
 
-1. **Standardized Test Scores:** Math, Reading Comprehension, and Critical Thinking scores.
-2. **Homework Completion & Study Habits:** Self-reported data from educational datasets.
-3. **Classroom Engagement:** Behavioral assessment surveys and teacher-reported engagement levels.
+## 6. Hypothesis Testing Summary
 
-### **5\. Development of the Screen Time Impact Score (STIS)**
+### Test 1: Sleep Duration vs Stress Level 
+- **Test Type:** One-Way ANOVA
+- **Result:**  
+  F-statistic = 0.153, p-value = 0.859
+- **Conclusion:**  
+  No significant difference in stress levels across sleep duration categories.
 
-To quantify the impact of screen time on children, I will develop the Screen Time Impact Score (STIS), which will combine multiple cognitive and academic factors.
+---
 
-I plan to conduct my calculations using python, exporting numpy and pandas libraries.
+### Test 2: Caffeine Intake vs Sleep Quality
+- **Test Type:** Pearson Correlation
+- **Result:**  
+  Correlation Coefficient = –0.006, p-value = 0.889
+- **Conclusion:**  
+  No significant correlation found between caffeine intake and sleep quality.
 
-#### **Formula:**
+---
 
-STIS=α(−screen time)+β(cognitive test score)+γ(academic performance)
+### Test 3: Screen Time vs Sleep Quality 
+- **Test Type:** Pearson Correlation
+- **Result:**  
+  Correlation Coefficient = 0.009, p-value = 0.834
+- **Conclusion:**  
+  No significant correlation found between screen time and sleep quality.
 
-STIS can be interpreted using a scale from 0-100.The scores from 0-30 pose a low risk while 31-50 pose a moderate risk with some negative effects observed, 51-70 present a high risk with significant negative impacts, and scores between 71-100 have a severe risk.
+---
 
-### **6\. Project Plan**
+### Test 4: Physical Activity vs Sleep Quality 
+- **Test Type:** Pearson Correlation
+- **Result:**  
+  Correlation Coefficent=-0.013508830985428627,p-value=0.7631671692880456
+  - **Conclusion:**  
+   No significant correlation found between physical activity and sleep quality.
 
-1. **Data Collection:** Retrieve data from ABCD, NHANES, and supplementary sources and supplementary sources such as NIH repositories, Kaggle datasets, and Google Dataset Search. Identify relevant features including screen time duration, cognitive test scores, academic performance, and social responsiveness from collected datasets.
-2. **Data Cleaning:** Identify and remove outliers using z-score analysis. Normalize and standardize numerical features to ensure uniformity across different datasets.
-3. **Exploratory Data Analysis:** Identify patterns and correlations using statistical visualization tools such as Matplotlib and Seaborn. Use heatmaps to explore correlations between variables.
-4. **Hypothesis Testing:** Test relationships between screen time and cognitive measures such as attention span, memory retention, and emotional regulation.
-5. **Machine Learning Models:** Build predictive models to analyze the impact of screen exposure on brain development.
-6. **STIS:** Select the most relevant variables contributing to screen time’s impact, including screen time per day, cognitive test scores, academic performance metrics. Next, conduct the weight assignment using Principal Component Analysis (PCA) to determine the most influential factors (α, β, γ). Normalize all values on a 0-100 scale to ensure comparability, apply the weighted formula.
-7. **Visualization:** Create charts and heatmaps to illustrate trends and findings by using Matplotlib and Seaborn.
+---
 
-**7\. Tools and Technologies**
-
-1.**Programming Language:** Python.
-
-2.**Libraries:** Pandas, NumPy, Matplotlib, Seaborn.
-
-3.**Data Sources:** NIH data repositories, Kaggle, government health databases, Google Dataset Search.
-
-4.**Platform for Documentation & Version Control:** GitHub.
+## 7. Limitations and Future Work
+The survey data is self-reported and may contain bias  due to subjective perception.
+* *   Future work could involve:
+  * *  Including academic performance metrics (GPA, study hours)
+  * *  Expanding sample size for more robust modeling.
+  
