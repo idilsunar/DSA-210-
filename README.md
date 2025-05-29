@@ -37,11 +37,19 @@ A Google Form was created and shared among university students to gather first-h
 * *   [Kaggle - Student Sleep Patterns](https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns?resource=download)
 * *   [Kaggle- SleepQual and B.Health dataset](https://www.kaggle.com/datasets/anshika1011/sleepqual-and-bhealth-dataset)
 
-## 4. Data Analysis Plan
-* *   **Exploratory Analysis**: Analyze sleep duration, consistency, bedtime vs wake-up patterns.
-* *   **Hypothesis Testing**: Use hypothesis testing to assess links between sleep and mental well-being scores.
-* *   **Visualization**: Use bar plots, heatmaps, and scatter plots to illustrate findings.
-* *   **Modeling**: Apply logistic regression to predict stress/anxiety levels from sleep features.
+### 4. Data Analysis Plan  
+- **Exploratory Analysis**  
+  - Analyze sleep duration, consistency, bedtime vs wake-up patterns.  
+- **Hypothesis Testing**  
+  - Use ANOVA and correlation tests to assess links between sleep and well-being scores.  
+- **Visualization**  
+  - Bar plots, heatmaps, and scatter plots to illustrate relationships.  
+- **Modeling**  
+  - **Logistic Regression** (baseline)  
+  - **Random Forest** (tuned via RandomizedSearchCV)  
+  - **Gradient Boosting** (tuned via RandomizedSearchCV)  
+  - **Hyperparameter tuning** for all models using 5-fold cross-validation and ROC AUC as the scoring metric  
+
 
 ## 4.1 Data Enrichment Strategy
 To strengthen the analysis, the self-reported survey data collected from university peers is enriched with multiple publicly available datasets. These external sources provide additional variables such as wearable-tracked sleep quality, biometric data, and mental health indicators collected in different contexts. By combining local and public datasets:
