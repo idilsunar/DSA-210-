@@ -1,7 +1,7 @@
 # Effects of Sleep Patterns on the Life Quality Of College Students
 
 ## 1. Project Overview
-This project investigates the relationship between sleep patterns and the life quality of university students. It aims to assess how sleep duration, regularity, and quality correlate with well-being indicators such as caffeine intake, screen time, physical activity, stress levels and other indicators.The data will be gathered from a self-reported survey and enriched using public datasets, then the data will be analyzed using exploratory and statistical methods.
+This project investigates the relationship between sleep patterns and the life quality of university students. It aims to assess how sleep duration and quality correlate with well-being indicators such as caffeine intake, screen time, physical activity and stress levels.The data will be gathered from a self-reported survey and enriched using public datasets, then the data will be analyzed using exploratory and statistical methods.
 
 I will test the validity of the following hypothesis:
 
@@ -18,7 +18,7 @@ Alternative Hypothesis (H₁): There is a significant relationship between sleep
 
 
 ## 2. Motivation
-I noticed that university students often suffer from irregular sleep schedules and high stress, especially during midterm weeks and finals. Understanding how sleep affects mental well-being can help students adopt healthier habits and improve academic performance and quality of life. Furthermore, I plan to better understand the data science concepts that we have learned during lectures by applying these concepts into daily life situations that concern many students such as myself.
+I noticed that university students often suffer from irregular sleep schedules and high stress, especially during midterm weeks and finals. Understanding how sleep affects well-being can help students adopt healthier habits and improve academic performance and their quality of life. Furthermore, I plan to better understand the data science concepts that we have learned during DSA210 by applying these concepts into daily life situations that concern many students such as myself.
 
 ## 3. Data Sources
 
@@ -31,6 +31,7 @@ A Google Form was created and shared among university students to gather first-h
 * *   Bedtime and wake-up times
 * *   Self-reported stress, anxiety, focus, and efficiency levels -Link:
   *   https://docs.google.com/forms/d/e/1FAIpQLSfzbsUjo9XQQTqDkXibk7uiqshNAtH5bJ6ntHw5EUVsY9YSXg/viewform?usp=header)
+    
     
 ### 3.2. Public Datasets:
 * *   [Kaggle - Student Sleep Patterns](https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns?resource=download)
@@ -93,7 +94,7 @@ To strengthen the analysis, the self-reported survey data collected from univers
 ---
 
 ## 7. Limitations and Future Work
-The survey data is self-reported and may contain bias  due to subjective perception.
+The survey data is self-reported and may contain bias due to subjective perception.
 * *   Future work could involve:
   * *  Including academic performance metrics (GPA, study hours)
   * *  Expanding sample size for more robust modeling.
