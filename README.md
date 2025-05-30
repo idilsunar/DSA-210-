@@ -100,10 +100,13 @@ To strengthen the analysis, the self-reported survey data collected from univers
    No significant correlation found between physical activity and sleep quality.
 
 ---
-
 ## 7. Limitations and Future Work
-The survey data is self-reported and may contain bias due to subjective perception.
-* *   Future work could involve:
-  * *  Including academic performance metrics (GPA, study hours)
-  * *  Expanding sample size for more robust modeling.
-  
+The survey is self-reported and may continue bias.
+
+**Future work could involve:**
+- **Nested Cross-Validation:** To guard against overfitting and obtain more reliable performance estimates across different folds and hyperparameter settings.  
+- **SHAP Analysis:** To open the “black box” of tree-based models, quantify feature contributions, and explain individual predictions.  
+- **Ensemble Stacking:** To combine the strengths of multiple classifiers (logistic regression, random forest, gradient boosting) for potentially higher accuracy and robustness.  
+- **Including academic performance metrics** (e.g. GPA, study hours) to explore their interaction with sleep and well-being.  
+- **Expanding the sample size** for more robust modeling and more generalizable results.
+
